@@ -11,11 +11,34 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style>
 
+
+
+        html,
+        body {
+            display:flex;
+            flex-direction: column;
+            height: 100%;
+            margin:0;
+        }
+
+        #page-content {
+            flex: 1 0 auto;
+        }
+
+        #sticky-footer {
+            flex-shrink:0;
+            margin-top: auto;
+        }
+
+        /* Other Classes for Page Styling */
+
+
+    </style>
     <title>Veritas Vincit</title>
 </head>
 <body>
-    <div class="container-fluid">
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <a class="navbar-brand" href="#"><h1 style="font-family: 'Leckerli One', cursive; color:gray; font-weight: bold;">
@@ -49,7 +72,7 @@
         </ul>
     </div>
 </nav>
-
+<div id="page-content">
 
         <div class="container  py-5 text-left ">
 
@@ -64,11 +87,11 @@
                     <br/>
 
                     <h6 style="font-weight: bold">
-                        CCP came for all of us.
+                        CCP came for us all
                         <br>
-                        Peace without surrender,
+                        Peace without surrender
                         <br>
-                        let's come together. </h6>
+                        Let's come together </h6>
 
                     <br/>
                     <br/>
@@ -86,21 +109,7 @@
 
                 <div class="col-sm-9">
 
-                    <div class="card" id="disclaimer" >
-                        <div class="card-body">
 
-
-
-                           <div class="card-text" >
-                               <p>All the content in this website are only for educational purposes.</p>
-                           </div>
-
-
-                        </div>
-                    </div>
-
-                    <br/>
-                    <br/>
 
 
                     <div id="contents">
@@ -143,7 +152,7 @@
                             <h5 class="card-title">727 Anti-CCP Demonstration in Paris </h5>
                             <h6 class="card-subtitle mb-2 text-muted">Heinrich Marx</h6>
 
-                            <p align="center">
+                            <p style="text-align:center" >
 
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/S5Kfyev1AH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -152,20 +161,27 @@
                         </div>
                     </div>
 
+
+
+
+
                 </div>
-
-
-
 
 
 
             </div>
 
         
-        </div>
 
 
     </div>
+<!--    </div>-->
+
+    <footer id="sticky-footer" class="py-4 bg-light text-white-50">
+        <div class="container text-center">
+            <small>All the content in this website are only for educational purposes.</small>
+        </div>
+    </footer>
 
 
 
